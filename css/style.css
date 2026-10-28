@@ -57,13 +57,13 @@ p{font-size:14.5px;line-height:1.62;margin-bottom:12px}
 
 /* ---------- Portada ---------- */
 .cover{background:#3a3a3d}
-.cover .bg{position:absolute;inset:0;background:url(../assets/img/portada-corazon.jpg) center bottom/auto 116% no-repeat,#3a3a3d}
+.cover .bg{position:absolute;inset:0;background:url(../assets/img/portada-corazon.jpg) center 62%/cover no-repeat,#3a3a3d}
 .cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,25,27,.78) 0%,rgba(25,25,27,.35) 38%,rgba(25,25,27,0) 55%,rgba(25,25,27,.55) 100%)}
-.cover .ct{position:absolute;z-index:2;top:64px;left:0;right:0;text-align:center;color:#fff}
-.cover .s1{font:400 100px/.8 var(--script);display:block;margin-bottom:6px;color:#fff}
-.cover h1{font:800 74px/1 var(--sans);color:#fff;letter-spacing:-.055em}
+.cover .ct{position:absolute;z-index:2;top:44px;left:0;right:0;text-align:center;color:#fff}
+.cover .s1{font:400 84px/.8 var(--script);display:block;margin-bottom:6px;color:#fff}
+.cover h1{font:800 66px/.98 var(--sans);color:#fff;letter-spacing:-.055em}
 .cover h1 s{text-decoration-thickness:5px;text-decoration-color:#fff}
-.cover .s2{font:400 84px/.9 var(--script);display:block;margin-top:12px;color:#fff}
+.cover .s2{font:400 66px/.9 var(--script);display:block;margin-top:12px;color:#fff}
 .cover .logo{position:absolute;z-index:2;bottom:52px;left:50%;transform:translateX(-50%);width:250px}
 .cover .tag{position:absolute;z-index:2;bottom:128px;left:0;right:0;text-align:center;color:#fff;font:700 11px/1 var(--sans);letter-spacing:.34em;text-transform:uppercase;opacity:.9}
 
