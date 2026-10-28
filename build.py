@@ -176,7 +176,7 @@ def cards(items, start=1, plain=False, examples=True):
 def band(txt, dk=False):
     return f'<div class="band{" dk" if dk else ""}">{txt}</div>'
 
-def opener(num, cap, img_html, title, sub=None, h=330):
+def opener(num, cap, img_html, title, sub=None, h=340):
     s = f'<div class="sub">{sub}</div>' if sub else ""
     return (f'<div class="opener-img" style="height:{h}px">{img_html}<div class="num">{num}</div><div class="cap">{cap}</div></div>'
             f'<div class="chead"><h2>{title}</h2>{s}</div>')
@@ -227,8 +227,8 @@ add("{{TOC}}", key="toc", cls="toc", section="Contenido")
 # ============ 4 INTRO
 add('<div class="pad">'
     + ph("Pareja conversando frente a frente en una mesa, luz cálida de tarde", "couple talking at table warm light, couple coffee conversation", "height:300px;margin:-76px -92px 30px;flex:none")
-    + '<span class="script" style="font-size:34px;line-height:1">Bienvenidos</span>'
-    '<h2 style="font:800 44px/1.05 var(--sans);margin:2px 0 18px">Iniciemos…</h2>'
+    + '<span class="script" style="font-size:62px;line-height:.9">Bienvenidos</span>'
+    '<h2 style="font:800 46px/1.02 var(--sans);margin:2px 0 18px">Iniciemos…</h2>'
     '<p class="lead" style="margin-bottom:14px">Como asesora clínica de pareja, he mirado que el desafío más frecuente y también el más silencioso en las relaciones es la desconexión emocional.</p>'
     '<p>No aparece de golpe: se instala poco a poco, en gestos que dejan de ocurrir, en conversaciones que ya no suceden, en miradas que se vuelven escasas. Cuando no se atiende a tiempo, esta desconexión puede profundizarse hasta convertirse en una ruptura definitiva, aun entre personas que se aman.</p>'
     '<p>Este Ebook nace de mi experiencia acompañando a parejas en procesos terapéuticos y del profundo deseo de ofrecer una guía clara, humana y accesible sobre esta problemática. Aquí encontrarás una explicación sencilla de qué es la desconexión emocional, por qué ocurre, cuáles son sus síntomas, qué consecuencias tiene y qué herramientas básicas existen para comenzar a abordarla.</p>'
@@ -246,7 +246,7 @@ add('<div class="bg"></div><div class="qt"><span class="script">Antes de empezar
 add('<div class="pad">'
     + opener("01", "Capítulo uno",
              '<div class="photo-bg" style="position:absolute;inset:0;background-image:url(assets/img/pareja-glitch.jpg);background-position:center 34%"></div>',
-             "¿Qué es la <s>desconexión</s> emocional?", h=400)
+             "¿Qué es la <s>desconexión</s> emocional?", h=340)
     + '<p class="lead" style="font-size:20px;margin-bottom:20px">La desconexión emocional es un proceso gradual en el que uno o ambos miembros de la pareja se distancian y dejan de estar presente emocionalmente en la relación.</p>'
     '<p style="margin-bottom:16px">La persona está físicamente, pero puede no estar disponible, conectada ni involucrada a nivel afectivo.</p>'
     '<div class="estar">'
@@ -262,7 +262,7 @@ add('<div class="pad">'
 cs = CAUSAS
 add('<div class="pad">'
     + opener("02", "Capítulo dos", ph("Pareja sentada en extremos opuestos del sofá, ambos con la mirada perdida", "couple sitting apart on couch, emotional distance couple, sad couple sofa", "position:absolute;inset:0", "dk"),
-             "¿Por qué ocurre la desconexión emocional?", "Trece causas frecuentes, con un ejemplo cotidiano de cada una.", h=320)
+             "¿Por qué ocurre la desconexión emocional?", "Trece causas frecuentes, con un ejemplo cotidiano de cada una.", h=340)
     + cards(cs[0:2], 1) + '</div>', key="cap2", section="02 · Por qué ocurre")
 add('<div class="pad">' + ph("Persona de espaldas mirando por la ventana, gesto pensativo y triste", "woman looking out window sad, lonely person window", "", "banner")
     + cards(cs[2:5], 3) + '</div>', section="02 · Por qué ocurre")
@@ -270,7 +270,7 @@ add('<div class="pad">' + ph("Pareja en la mesa del desayuno, cada uno en su mun
     + cards(cs[5:8], 6) + '</div>', section="02 · Por qué ocurre")
 add('<div class="pad">' + ph("Pareja en la cama o sofá, cada uno mirando su celular", "couple on phones in bed, phone addiction couple, couple ignoring each other smartphone", "", "banner")
     + cards(cs[8:11], 9) + '</div>', section="02 · Por qué ocurre")
-add('<div class="pad">' + ph("Padres agotados con niños y trabajo; la pareja queda en segundo plano", "parents tired kids work home, busy couple family routine", "height:300px", "banner")
+add('<div class="pad">' + ph("Padres agotados con niños y trabajo; la pareja queda en segundo plano", "parents tired kids work home, busy couple family routine", "", "banner")
     + cards(cs[11:13], 12) + band("Identificar la verdadera brecha te ayudará a no luchar contra fantasmas ni a imaginar escenarios que no existen.") + '</div>',
     section="02 · Por qué ocurre")
 
@@ -286,7 +286,7 @@ add('<div class="pad test">' + test_groups(TEST1[9:13], 10)
 # ============ CAP 3 síntomas
 add('<div class="pad">'
     + opener("03", "Capítulo tres", '<div class="photo-bg" style="position:absolute;inset:0;background-image:url(assets/img/manos-cables.jpg);background-position:center 40%"></div>',
-             "¿Cómo saber que estamos desconectados o nos estamos desconectando?", h=330)
+             "¿Cómo saber que estamos desconectados o nos estamos desconectando?", h=340)
     + cards(SINTOMAS[0:3], 1, examples=False) + '</div>', key="cap3", section="03 · Cómo saber")
 add('<div class="pad">' + cards(SINTOMAS[3:6], 4, examples=False) + '<div class="sp"></div>'
     + ph("Manos de pareja que casi se tocan sobre una mesa, sin llegar a unirse", "hands almost touching table, couple hands distance", "height:300px;flex:none;border-radius:6px;margin-bottom:22px", "")
@@ -300,7 +300,7 @@ add('<div class="pad test compact"><span class="tab">Mini Test 2</span><h2>¿Est
 # ============ CAP 4 consecuencias
 add('<div class="pad">'
     + opener("04", "Capítulo cuatro", '<div class="photo-bg" style="position:absolute;inset:0;background-image:url(assets/img/corazon-alto.jpg);background-position:center 62%"></div>',
-             "¿Qué puede ocurrir en uno o ambos miembros de la pareja a raíz de la desconexión emocional?", h=300)
+             "¿Qué puede ocurrir en uno o ambos miembros de la pareja a raíz de la desconexión emocional?", h=340)
     + cards(CONSEC[0:3], 1, examples=False) + '</div>', key="cap4", section="04 · Qué puede ocurrir")
 add('<div class="pad">' + cards(CONSEC[3:6], 4, examples=False) + '<div class="sp"></div>'
     + ph("Persona despierta de noche en la cama, mirando el techo, luz azul tenue", "insomnia night bed awake, woman awake at night overthinking", "height:290px;flex:none;border-radius:6px;margin-bottom:22px", "dk")
@@ -314,25 +314,25 @@ add('<div class="pad test">' + reflect_groups(TEST3[2:4], 3) + '<div class="sp" 
     + band("La desconexión emocional puede entenderse como un proceso dinámico que, aunque duela, también abre la puerta a la reparación. No es necesariamente un fracaso ni una sentencia definitiva.") + '</div>', section="Mini Test final")
 
 # ============ CAP 5 ejemplos
-ej = "".join(f'<div class="card" style="grid-template-columns:96px 1fr"><div class="no" style="font-size:12px;letter-spacing:.2em;-webkit-text-stroke:0;color:var(--coral-d);font-weight:800;text-transform:uppercase;padding-top:5px">Escena {i}</div><div><p style="margin:0">{E(t)}</p></div></div>' for i, t in enumerate(EJEMPLOS, 1))
+ej = "".join(f'<div class="card" style="grid-template-columns:96px 1fr;padding:10px 0"><div class="no" style="font-size:12px;letter-spacing:.2em;-webkit-text-stroke:0;color:var(--coral-d);font-weight:800;text-transform:uppercase;padding-top:5px">Escena {i}</div><div><p style="margin:0">{E(t)}</p></div></div>' for i, t in enumerate(EJEMPLOS, 1))
 add('<div class="pad">'
     + opener("05", "Capítulo cinco", ph("Pareja en la sala; uno habla, el otro mira el celular y evita el contacto visual", "couple living room distracted phone, couple not listening", "position:absolute;inset:0", "dk"),
-             "Ejemplos prácticos de desconexión emocional", "Cinco escenas cotidianas que quizás te resulten familiares.", h=250)
-    + '<div class="cards">' + ej + '</div><div class="sp"></div>'
+             "Ejemplos prácticos de desconexión emocional", "Cinco escenas cotidianas que quizás te resulten familiares.", h=340)
+    + '<div class="cards ejs">' + ej + '</div><div class="sp" style="height:10px"></div>'
     + band("La clave es detener el “piloto automático emocional” y recuperar la presencia.") + '</div>', key="cap5", section="05 · Ejemplos")
 
 # ============ CAP 6 herramientas
 def tool_big(t): return f'<div class="tool big"><p>{E(t)}</p></div>'
 def tool(tag, p, n): return f'<div class="tool"><div class="tag"><small>Herramienta {n:02d}</small>{E(tag)}</div><p>{p}</p></div>'
 A = "".join(tool_big(t) for t in HERR_A)
-add('<div class="pad">'
+add('<div class="pad cp">'
     + opener("06", "Capítulo seis", ph("Pareja caminando de la mano al atardecer, ligeros y sonrientes", "couple walking holding hands sunset, couple reconnecting", "position:absolute;inset:0", ""),
-             "Herramientas básicas", "Primeros pasos para comenzar a reconectar.", h=360)
+             "Herramientas básicas", "Primeros pasos para comenzar a reconectar.", h=340)
     + '<div class="cards plain" style="margin-top:4px">' + A + '</div></div>', key="cap6", section="06 · Herramientas")
 
 def tools_page(items, start, head=True):
     h = ('<div class="parts"><i>Según lo que nos desconecta</i></div><div style="height:6px"></div>' if head else "")
-    return '<div class="pad">' + h + "".join(tool(t, p, start + k) for k, (t, p) in enumerate(items)) + '</div>'
+    return '<div class="pad tp">' + h + "".join(tool(t, p, start + k) for k, (t, p) in enumerate(items)) + '</div>'
 add(tools_page(HERR_B[0:4], 1), section="06 · Herramientas")
 add(tools_page(HERR_B[4:8], 5, False), section="06 · Herramientas")
 add(tools_page(HERR_B[8:11], 9, False), section="06 · Herramientas")
@@ -340,13 +340,13 @@ add(tools_page(HERR_B[11:13], 12, False).replace('</div></div>\n','') if False e
     + '<div class="sp"></div>' + ph("Pareja leyendo juntos un libro en el sofá, cercanos y relajados", "couple reading book together sofa, couple cozy reading", "height:300px;flex:none;border-radius:6px", "") + '</div>',
     section="06 · Herramientas")
 C = "".join(tool_big(t) for t in HERR_C)
-add('<div class="pad"><div class="parts"><i>Para sostener la conexión</i></div><div style="height:6px"></div><div class="cards plain">' + C + '</div><div class="sp"></div>'
+add('<div class="pad cp"><div class="parts"><i>Para sostener la conexión</i></div><div style="height:6px"></div><div class="cards plain">' + C + '</div><div class="sp"></div>'
     + ph("Pareja abrazada, frente con frente, ojos cerrados, momento íntimo", "couple embrace forehead touch, couple intimacy tender", "height:320px;flex:none;border-radius:6px;margin-bottom:22px", "")
     + band("La distancia no crece sola: se alimenta. Pero también puede detenerse con una decisión consciente.") + '</div>', section="06 · Herramientas")
 
 # ============ MENSAJE FINAL
-add('<div class="pad mf"><span class="script" style="font-size:34px;line-height:1">Para cerrar</span>'
-    '<h2 style="font:800 44px/1.05 var(--sans);margin:2px 0 20px">Mensaje final…</h2>'
+add('<div class="pad mf"><span class="script" style="font-size:62px;line-height:.9">Para cerrar</span>'
+    '<h2 style="font:800 46px/1.02 var(--sans);margin:2px 0 20px">Mensaje final…</h2>'
     '<p class="lead" style="font-size:18px">A lo largo de este Ebook recorrimos un camino que nos permitió comprender que la desconexión emocional es un proceso gradual y doloroso, del cual solo podemos salvarnos cuando identificamos sus raíces con honestidad, responsabilidad y valentía.</p>'
     '<p>Hacernos cargo de lo que nos corresponde es el primer paso para acercarnos, mirarnos, reconocernos, elegirnos y comenzar a restaurar el vínculo.</p>'
     '<p>La distancia en pareja puede despertar rechazo, ansiedad, tristeza o abandono. Y, como vimos, existen dinámicas que vuelven la relación un espacio inseguro, frío y distante: el maltrato, las promesas incumplidas, la invalidación emocional, las heridas pasadas, el estrés sostenido y la monotonía, son algunas de ellas. Reconocerlas es fundamental para detener el daño y abrir la puerta a la reparación.</p>'
@@ -356,13 +356,13 @@ add('<div class="pad mf"><p style="margin-bottom:8px">Mi intención es que este 
     '<ul class="ck"><li>Qué dinámicas deterioran la relación;</li><li>Qué síntomas de desconexión emocional están presentes;</li><li>Cómo nos afecta la distancia afectiva; y</li><li>Qué herramientas básicas podemos comenzar a aplicar según su caso particular.</li></ul>'
     '<p>Algunas de las prácticas que exploraste aquí: la escucha empática, la comunicación asertiva, las peticiones claras, la validación emocional, la novedad, el tiempo de calidad y la expresión del amor según el lenguaje afectivo del otro, no son soluciones mágicas, son actos conscientes, diarios y constantes que, sostenidos en el tiempo, pueden transformar profundamente la relación.</p>'
     '<p>Hoy los invito a soltar las culpas y ponerse manos a la obra. Cada uno debe asumir su parte y emprender el cambio desde la presencia, la intención y la elección diaria.</p>'
-    + '<div class="sp" style="height:6px"></div>' + band("El amor es sentimiento, sí, pero también es acción.").replace('class="band"','class="band" style="margin-top:14px"') + '<div class="sp" style="height:26px"></div>'
+    + '<div class="sp" style="height:6px"></div>' + band("El amor es sentimiento, sí, pero también es acción.").replace('class="band"','class="band xl" style="margin-top:auto"') + '<div class="sp" style="height:30px"></div>'
     '<div class="thanks"><p>Gracias por llegar hasta aquí y por confiar en mi trabajo. Y gracias, especialmente, a cada pareja que he acompañado en consulta: ustedes inspiran cada palabra de este Ebook.</p>'
     '<img src="assets/logo/johanna-negro.png" alt="Johanna Daza"></div></div>', section="Mensaje final")
 
 # ============ SOBRE / OTRO EBOOK
 add('<div class="draft" style="right:92px;top:30px">Texto de relleno · editar</div>'
-    '<div class="pad about"><span class="script" style="font-size:32px;line-height:1">Quién soy</span><h2>Johanna Daza</h2>'
+    '<div class="pad about"><span class="script" style="font-size:60px;line-height:.9">Quién soy</span><h2>Johanna Daza</h2>'
     '<div class="who">' + ph("Retrato de Johanna", "segundo retrato (más cerrado)", "", "dk sm", client=True) +
     '<div><p>Soy asesora clínica de pareja. Acompaño a personas y parejas que desean comprender su historia, sanar sus heridas y construir vínculos más presentes, honestos y conectados.</p>'
     '<p style="margin:0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi trabajo une la experiencia en consulta con herramientas simples que cualquiera puede empezar a practicar hoy.</p></div></div>'
@@ -405,7 +405,7 @@ for i, p in enumerate(pages, 1):
 doc = f'''<!doctype html>
 <html lang="es"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{TITLE} — Johanna Daza · E-Book (v1)</title>
+<title>E-Book Johanna Daza</title>
 <link rel="stylesheet" href="css/style.css">
 </head><body>
 <main class="book">
