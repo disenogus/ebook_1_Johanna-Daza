@@ -341,7 +341,7 @@ add(tools_page(HERR_B[11:13], 12, False).replace('</div></div>\n','') if False e
     section="06 · Herramientas")
 C = "".join(tool_big(t) for t in HERR_C)
 add('<div class="pad"><div class="parts"><i>Para sostener la conexión</i></div><div style="height:6px"></div><div class="cards plain">' + C + '</div><div class="sp"></div>'
-    + ph("Pareja abrazada, frente con frente, ojos cerrados, momento íntimo", "couple embrace forehead touch, couple intimacy tender", "height:210px;flex:none;border-radius:6px;margin-bottom:22px", "")
+    + ph("Pareja abrazada, frente con frente, ojos cerrados, momento íntimo", "couple embrace forehead touch, couple intimacy tender", "height:320px;flex:none;border-radius:6px;margin-bottom:22px", "")
     + band("La distancia no crece sola: se alimenta. Pero también puede detenerse con una decisión consciente.") + '</div>', section="06 · Herramientas")
 
 # ============ MENSAJE FINAL

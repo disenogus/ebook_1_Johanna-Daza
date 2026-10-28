@@ -260,3 +260,10 @@ figure.ph.sm .ph-in{padding:8px}
 .test.compact .q{padding:6px 0 6px 32px}
 .opener-img .ph-in{justify-content:flex-start;padding-top:56px}
 .toc li{padding:13px 0}
+.ph img[src$="img-12.jpg"]{object-position:center 42%}
+.ph img[src$="img-03.jpg"]{object-position:center 30%}
+.ph img[src$="img-02.jpg"]{object-position:center 22%}
+.ph img[src$="img-06.jpg"]{object-position:center 45%}
+.ph img[src$="img-01.jpg"]{object-position:center 22%}
+.ph img[src$="img-08.jpg"]{object-position:center 28%}
+.ph img[src$="img-02.jpg"]{object-position:center 4%!important}
