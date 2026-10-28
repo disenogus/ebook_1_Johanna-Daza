@@ -211,7 +211,7 @@ add('<div class="bg"></div><div class="ct"><span class="s1">Sanando</span>'
 
 # ============ 2 BIO
 add('<div class="photo">' + ph("Retrato de Johanna Daza (vertical, fondo neutro, mirada cálida)", "retrato profesional de Johanna · reemplazar", "position:absolute;inset:0", "dk", client=True) + '</div>'
-    '<div class="draft" style="left:370px;top:34px">Texto de relleno · editar</div>'
+    '<div class="draft" style="left:430px;top:34px">Texto de relleno · editar</div>'
     '<div class="col"><span class="script">Conoce a la autora</span><h2>Johanna<br>Daza</h2>'
     '<div class="role">Asesora clínica de pareja</div>'
     '<p class="lead" style="font-size:17px">“Acompaño a las parejas a volver a mirarse, a hablarse y a elegirse, aun cuando el camino parezca largo.”</p>'
@@ -227,7 +227,7 @@ add("{{TOC}}", key="toc", cls="toc", section="Contenido")
 # ============ 4 INTRO
 add('<div class="pad">'
     + ph("Pareja conversando frente a frente en una mesa, luz cálida de tarde", "couple talking at table warm light, couple coffee conversation", "height:300px;margin:-76px -92px 30px;flex:none")
-    + '<span class="script" style="font-size:62px;line-height:.9">Bienvenidos</span>'
+    + '<span class="script" style="font-size:42px;line-height:1">Bienvenidos</span>'
     '<h2 style="font:800 46px/1.02 var(--sans);margin:2px 0 18px">Iniciemos…</h2>'
     '<p class="lead" style="margin-bottom:14px">Como asesora clínica de pareja, he mirado que el desafío más frecuente y también el más silencioso en las relaciones es la desconexión emocional.</p>'
     '<p>No aparece de golpe: se instala poco a poco, en gestos que dejan de ocurrir, en conversaciones que ya no suceden, en miradas que se vuelven escasas. Cuando no se atiende a tiempo, esta desconexión puede profundizarse hasta convertirse en una ruptura definitiva, aun entre personas que se aman.</p>'
@@ -345,7 +345,7 @@ add('<div class="pad cp"><div class="parts"><i>Para sostener la conexión</i></d
     + band("La distancia no crece sola: se alimenta. Pero también puede detenerse con una decisión consciente.") + '</div>', section="06 · Herramientas")
 
 # ============ MENSAJE FINAL
-add('<div class="pad mf"><span class="script" style="font-size:62px;line-height:.9">Para cerrar</span>'
+add('<div class="pad mf"><span class="script" style="font-size:42px;line-height:1">Para cerrar</span>'
     '<h2 style="font:800 46px/1.02 var(--sans);margin:2px 0 20px">Mensaje final…</h2>'
     '<p class="lead" style="font-size:18px">A lo largo de este Ebook recorrimos un camino que nos permitió comprender que la desconexión emocional es un proceso gradual y doloroso, del cual solo podemos salvarnos cuando identificamos sus raíces con honestidad, responsabilidad y valentía.</p>'
     '<p>Hacernos cargo de lo que nos corresponde es el primer paso para acercarnos, mirarnos, reconocernos, elegirnos y comenzar a restaurar el vínculo.</p>'
@@ -361,8 +361,8 @@ add('<div class="pad mf"><p style="margin-bottom:8px">Mi intención es que este 
     '<img src="assets/logo/johanna-negro.png" alt="Johanna Daza"></div></div>', section="Mensaje final")
 
 # ============ SOBRE / OTRO EBOOK
-add('<div class="draft" style="right:92px;top:30px">Texto de relleno · editar</div>'
-    '<div class="pad about"><span class="script" style="font-size:60px;line-height:.9">Quién soy</span><h2>Johanna Daza</h2>'
+add('<div class="draft" style="right:92px;top:62px">Texto de relleno · editar</div>'
+    '<div class="pad about"><span class="script" style="font-size:42px;line-height:1">Quién soy</span><h2>Johanna Daza</h2>'
     '<div class="who">' + ph("Retrato de Johanna", "segundo retrato (más cerrado)", "", "dk sm", client=True) +
     '<div><p>Soy asesora clínica de pareja. Acompaño a personas y parejas que desean comprender su historia, sanar sus heridas y construir vínculos más presentes, honestos y conectados.</p>'
     '<p style="margin:0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi trabajo une la experiencia en consulta con herramientas simples que cualquiera puede empezar a practicar hoy.</p></div></div>'

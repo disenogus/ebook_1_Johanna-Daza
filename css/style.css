@@ -10,14 +10,15 @@
 @font-face{font-family:"Inter";font-weight:800;font-style:normal;src:url(../assets/fonts/inter-latin-800-normal.woff2) format("woff2")}
 @font-face{font-family:"Inter";font-weight:900;font-style:normal;src:url(../assets/fonts/inter-latin-900-normal.woff2) format("woff2")}
 @font-face{font-family:"Inter";font-weight:400;font-style:italic;src:url(../assets/fonts/inter-latin-400-italic.woff2) format("woff2")}
-@font-face{font-family:"Herr Von Muellerhoff";font-weight:400;src:url(../assets/fonts/herr-von-muellerhoff-latin-400-normal.woff2) format("woff2")}
+@font-face{font-family:"Instrument Serif";font-weight:400;font-style:italic;src:url(../assets/fonts/instrument-serif-latin-400-italic.woff2) format("woff2")}
+@font-face{font-family:"Instrument Serif";font-weight:400;font-style:normal;src:url(../assets/fonts/instrument-serif-latin-400-normal.woff2) format("woff2")}
 
 :root{
   --paper:#F7F2EC; --paper-2:#EFE6DC; --white:#FFFFFF;
   --ink:#2A2A2D; --ink-2:#5B5B62; --char:#2B2B2E; --char-2:#3B3B40;
   --coral:#F29A1F; --coral-d:#C86B00; --coral-l:#FCE9C9;
   --amber:#F5A83A; --amber-l:#FCEBCF;
-  --sans:"Inter",system-ui,sans-serif; --serif:"Inter",system-ui,sans-serif; --script:"Herr Von Muellerhoff","Brush Script MT",cursive;
+  --sans:"Inter",system-ui,sans-serif; --serif:"Inter",system-ui,sans-serif; --script:"Instrument Serif",Georgia,serif;
   --pw:816px; --ph:1056px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
@@ -60,10 +61,10 @@ p{font-size:14.5px;line-height:1.62;margin-bottom:12px}
 .cover .bg{position:absolute;inset:0;background:url(../assets/img/portada-corazon.jpg) center 62%/cover no-repeat,#3a3a3d}
 .cover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,25,27,.78) 0%,rgba(25,25,27,.35) 38%,rgba(25,25,27,0) 55%,rgba(25,25,27,.55) 100%)}
 .cover .ct{position:absolute;z-index:2;top:44px;left:0;right:0;text-align:center;color:#fff}
-.cover .s1{font:400 84px/.8 var(--script);display:block;margin-bottom:6px;color:#fff}
+.cover .s1{font:400 62px/.9 var(--script);display:block;margin-bottom:6px;color:#fff}
 .cover h1{font:800 66px/.98 var(--sans);color:#fff;letter-spacing:-.055em}
 .cover h1 s{text-decoration-thickness:5px;text-decoration-color:#fff}
-.cover .s2{font:400 66px/.9 var(--script);display:block;margin-top:12px;color:#fff}
+.cover .s2{font:400 52px/1 var(--script);display:block;margin-top:12px;color:#fff}
 .cover .logo{position:absolute;z-index:2;bottom:52px;left:50%;transform:translateX(-50%);width:250px}
 .cover .tag{position:absolute;z-index:2;bottom:128px;left:0;right:0;text-align:center;color:#fff;font:700 11px/1 var(--sans);letter-spacing:.34em;text-transform:uppercase;opacity:.9}
 
@@ -71,7 +72,7 @@ p{font-size:14.5px;line-height:1.62;margin-bottom:12px}
 .bio{background:var(--paper)}
 .bio .photo{position:absolute;left:0;top:0;bottom:0;width:340px}
 .bio .col{position:absolute;left:340px;right:0;top:0;bottom:0;padding:92px 70px 92px 58px;display:flex;flex-direction:column}
-.bio .script{font-size:62px;line-height:1}
+.bio .script{font-size:40px;line-height:1}
 .bio h2{font:800 46px/1.02 var(--sans);margin:6px 0 10px;letter-spacing:-.01em}
 .bio .role{font:700 11px/1.5 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--coral-d);margin-bottom:26px}
 .bio .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0 20px}
@@ -99,7 +100,7 @@ figure.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
 
 /* ---------- Contenido (índice) ---------- */
 .toc h2{font:800 52px/1 var(--sans);margin-bottom:6px;letter-spacing:-.01em}
-.toc .script{font-size:54px;display:block;margin-bottom:2px}
+.toc .script{font-size:38px;display:block;margin-bottom:2px}
 .toc ol{list-style:none;margin-top:28px}
 .toc li{display:flex;align-items:baseline;gap:14px;padding:11px 0;border-bottom:1px solid rgba(42,42,45,.12)}
 .toc li .no{font:800 13px/1 var(--sans);color:var(--coral-d);width:30px;flex:none}
@@ -116,14 +117,14 @@ figure.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
 .opener-img.tall{height:430px}
 .opener-img::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,20,22,.05) 40%,rgba(20,20,22,.7) 100%);z-index:3}
 .opener-img .num{position:absolute;z-index:4;left:92px;bottom:20px;font:800 120px/.8 var(--sans);color:rgba(255,255,255,.96);letter-spacing:-.04em}
-.opener-img .cap{position:absolute;z-index:4;right:92px;bottom:30px;font:400 60px/1 var(--script);color:#fff}
+.opener-img .cap{position:absolute;z-index:4;right:92px;bottom:30px;font:400 40px/1 var(--script);color:#fff}
 .chead{padding:34px 0 22px}
 .chead h2{font:800 38px/1.08 var(--sans);letter-spacing:-.015em}
 .chead h2 s{text-decoration-color:var(--coral);text-decoration-thickness:4px}
 .chead .sub{font:400 16.5px/1.5 var(--serif);color:var(--ink-2);margin-top:10px}
 .pg-head{padding-bottom:18px;margin-bottom:6px;border-bottom:2px solid var(--char)}
 .pg-head h3{font:800 24px/1.1 var(--sans)}
-.pg-head .script{font-size:40px}
+.pg-head .script{font-size:30px}
 
 /* ---------- Tarjetas (causas / síntomas / consecuencias) ---------- */
 .cards{display:flex;flex-direction:column;gap:0}
@@ -156,9 +157,9 @@ figure.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
 .quote .bg{position:absolute;inset:0;background:url(../assets/img/manos-alianza.jpg) center/cover}
 .quote::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(24,24,27,.82) 0%,rgba(24,24,27,.55) 55%,rgba(24,24,27,.1) 100%)}
 .quote .qt{position:absolute;z-index:2;left:92px;top:0;bottom:0;width:470px;display:flex;flex-direction:column;justify-content:center;color:#fff}
-.quote .qt .script{font-size:54px;color:var(--amber);margin-bottom:18px}
+.quote .qt .script{font-size:38px;color:var(--amber);margin-bottom:18px}
 .quote .qt h2{font:800 44px/1.1 var(--sans);color:#fff;letter-spacing:-.015em}
-.quote .qt .s{font:400 100px/.95 var(--script);color:var(--amber);margin-top:20px}
+.quote .qt .s{font:400 70px/1 var(--script);color:var(--amber);margin-top:20px}
 .quote .logo{position:absolute;z-index:2;left:92px;bottom:60px;width:170px}
 
 /* ---------- Cap 1 ---------- */
@@ -234,7 +235,7 @@ figure.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
 .back::before{content:"";position:absolute;left:0;right:0;bottom:0;height:62%;z-index:1;background:linear-gradient(180deg,var(--char) 0%,rgba(43,43,46,.55) 45%,rgba(43,43,46,.1) 100%)}
 .back .bt{position:absolute;z-index:2;top:130px;left:92px;right:92px;text-align:center;color:#fff}
 .back .bt h2{font:800 34px/1.15 var(--sans);color:#fff}
-.back .bt .s{font:400 88px/1 var(--script);color:var(--amber);display:block;margin-top:12px}
+.back .bt .s{font:400 60px/1.05 var(--script);color:var(--amber);display:block;margin-top:12px}
 .back .logo{position:absolute;z-index:2;bottom:56px;left:50%;transform:translateX(-50%);width:230px}
 
 /* ---------- Etiqueta de borrador ---------- */
@@ -280,3 +281,8 @@ h1,h2,h3{letter-spacing:-.03em}
 .band.xl::before{font-size:92px;left:26px;top:14px}
 .cards.ejs .card{padding:9px 0}
 .cards.ejs .card p{font-size:13.6px;line-height:1.5}
+
+.script,.cover .s1,.cover .s2,.opener-img .cap,.quote .qt .s,.back .bt .s{font-style:italic;letter-spacing:-.01em}
+.bio .photo{width:380px}.bio .col{left:380px;padding:92px 62px 92px 50px}.bio .foot{left:438px}
+.bio .photo .ph img{object-position:56% 30%}
+.about .who figure.ph img{object-position:center 20%}
