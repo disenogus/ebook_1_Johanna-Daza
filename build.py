@@ -211,13 +211,12 @@ add('<div class="bg"></div><div class="ct"><span class="s1">Sanando</span>'
 
 # ============ 2 BIO
 add('<div class="photo">' + ph("Retrato de Johanna Daza (vertical, fondo neutro, mirada cálida)", "retrato profesional de Johanna · reemplazar", "position:absolute;inset:0", "dk", client=True) + '</div>'
-    '<div class="draft" style="left:430px;top:34px">Texto de relleno · editar</div>'
     '<div class="col"><span class="script">Conoce a la autora</span><h2>Johanna<br>Daza</h2>'
     '<div class="role">Asesora clínica de pareja</div>'
-    '<p class="lead" style="font-size:17px">“Acompaño a las parejas a volver a mirarse, a hablarse y a elegirse, aun cuando el camino parezca largo.”</p>'
-    '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Johanna es asesora clínica de pareja con formación en terapia vincular y una vocación clara: ofrecer herramientas humanas, claras y accesibles para quienes quieren reparar su relación.</p>'
-    '<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>'
-    '<div class="stats"><div class="stat"><b>+10</b><span>años de experiencia</span></div><div class="stat"><b>+500</b><span>parejas acompañadas</span></div><div class="stat"><b>100%</b><span>enfoque humano</span></div></div>'
+    '<p class="lead" style="font-size:17px">“La conexión comienza cuando alguien se atreve a hablar… y alguien decide escuchar.”</p>'
+    '<p>Como asesora clínica de pareja, he mirado que el desafío más frecuente y también el más silencioso en las relaciones es la desconexión emocional.</p>'
+    '<p>Este Ebook nace de mi experiencia acompañando a parejas en procesos terapéuticos y del profundo deseo de ofrecer una guía clara, humana y accesible sobre esta problemática.</p>'
+    '<p style="margin-bottom:26px">Mi intención es que sea un espacio amoroso, seguro, un punto de partida y una compañía en el camino hacia relaciones más presentes, más honestas y más conectadas.</p>'
     '<img class="sign" src="assets/logo/johanna-color.png" alt="Johanna Daza"></div>',
     key="bio", cls="bio", section="")
 
@@ -361,15 +360,12 @@ add('<div class="pad mf"><p style="margin-bottom:8px">Mi intención es que este 
     '<img src="assets/logo/johanna-negro.png" alt="Johanna Daza"></div></div>', section="Mensaje final")
 
 # ============ SOBRE / OTRO EBOOK
-add('<div class="draft" style="right:92px;top:62px">Texto de relleno · editar</div>'
-    '<div class="pad about"><span class="script" style="font-size:42px;line-height:1">Quién soy</span><h2>Johanna Daza</h2>'
+add('<div class="pad about"><span class="script" style="font-size:42px;line-height:1">Quién soy</span><h2>Johanna Daza</h2>'
     '<div class="who">' + ph("Retrato de Johanna", "segundo retrato (más cerrado)", "", "dk sm", client=True) +
     '<div><p>Soy asesora clínica de pareja. Acompaño a personas y parejas que desean comprender su historia, sanar sus heridas y construir vínculos más presentes, honestos y conectados.</p>'
-    '<p style="margin:0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi trabajo une la experiencia en consulta con herramientas simples que cualquiera puede empezar a practicar hoy.</p></div></div>'
-    '<div class="contact"><div><b>Instagram</b>@usuario</div><div><b>Sitio web</b>www.tusitio.com</div><div><b>Escríbeme</b>correo@ejemplo.com</div></div>'
-    '<div class="next">' + ph("Portada del próximo E-Book", "diseño de portada del segundo E-Book", "", "dk sm", client=True) +
-    '<div><span class="eyebrow">Hay otro E-Book</span><h3>[Título del segundo E-Book]</h3>'
-    '<p>Una guía para seguir profundizando en el camino de la reconexión. Texto de relleno: aquí irá una breve descripción del segundo E-Book y a quién está dirigido.</p><span class="cta">Conócelo aquí</span></div></div>'
+    '<p style="margin:0">Mi trabajo nace en la consulta, acompañando a cada pareja en su proceso. Gracias a todas ellas: inspiran cada palabra de este Ebook.</p></div></div>'
+    '<div class="next" style="grid-template-columns:1fr"><div><span class="eyebrow">Hay otro E-Book</span><h3>Muy pronto, un nuevo E-Book</h3>'
+    '<p style="margin:0">Pronto compartiré un segundo E-Book para seguir acompañándote en el camino hacia relaciones más presentes, más honestas y más conectadas.</p></div></div>'
     '</div>', key="about", section="Sobre la autora")
 
 # ============ CONTRAPORTADA

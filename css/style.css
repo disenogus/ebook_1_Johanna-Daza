@@ -218,8 +218,9 @@ figure.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
 
 /* ---------- Sobre / otro ebook ---------- */
 .about h2{font:800 36px/1.05 var(--sans);letter-spacing:-.01em;margin-bottom:12px}
-.about .who{display:grid;grid-template-columns:150px 1fr;gap:22px;align-items:start;margin:8px 0 22px}
-.about .who figure{height:190px;border-radius:6px}
+.about .who{display:grid;grid-template-columns:300px 1fr;gap:34px;align-items:center;margin:18px 0 22px}
+.about .who p{font-size:15.5px;line-height:1.7}
+.about .who figure{height:470px;border-radius:6px}
 .next{margin-top:auto;background:var(--char);border-radius:8px;display:grid;grid-template-columns:200px 1fr;gap:26px;padding:28px;color:#fff;align-items:center}
 .next figure{height:270px;border-radius:4px}
 .next .eyebrow{color:var(--amber)}
