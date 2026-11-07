@@ -206,17 +206,16 @@ def reflect_groups(groups, start=1):
 # ============ 1 PORTADA
 add('<div class="bg"></div><div class="ct"><span class="s1">Sanando</span>'
     '<h1><span>la <s>Desconexión</s></span><br><span>emocional</span></h1><span class="s2">en pareja</span></div>'
-    '<div class="tag">E-Book</div><img class="logo" src="assets/logo/johanna-blanco.png" alt="Johanna Daza">',
+    '<div class="tag">E-Book</div><img class="logo" src="assets/logo/johanna-blanco.png" alt="Johanna Daza">'
+    '<div class="cname">Johanna Daza</div><div class="cig">@johannadazatorres</div>',
     key="cover", cls="cover dark", nofoot=True, dark=True)
 
 # ============ 2 BIO
 add('<div class="photo">' + ph("Retrato de Johanna Daza (vertical, fondo neutro, mirada cálida)", "retrato profesional de Johanna · reemplazar", "position:absolute;inset:0", "dk", client=True) + '</div>'
     '<div class="col"><span class="script">Conoce a la autora</span><h2>Johanna<br>Daza</h2>'
     '<div class="role">Asesora clínica de pareja</div>'
-    '<p class="lead" style="font-size:17px">“La conexión comienza cuando alguien se atreve a hablar… y alguien decide escuchar.”</p>'
-    '<p>Como asesora clínica de pareja, he mirado que el desafío más frecuente y también el más silencioso en las relaciones es la desconexión emocional.</p>'
-    '<p>Este Ebook nace de mi experiencia acompañando a parejas en procesos terapéuticos y del profundo deseo de ofrecer una guía clara, humana y accesible sobre esta problemática.</p>'
-    '<p style="margin-bottom:26px">Mi intención es que sea un espacio amoroso, seguro, un punto de partida y una compañía en el camino hacia relaciones más presentes, más honestas y más conectadas.</p>'
+    '<p class="lead" style="font-size:17px">Acompaño a personas y parejas que desean comprender su historia, sanar sus heridas y construir vínculos más presentes, honestos y conectados.</p>'
+    '<p style="margin-bottom:26px">Mi trabajo nace en la consulta, acompañando a cada pareja en su proceso.</p>'
     '<img class="sign" src="assets/logo/johanna-color.png" alt="Johanna Daza"></div>',
     key="bio", cls="bio", section="")
 
@@ -224,15 +223,15 @@ add('<div class="photo">' + ph("Retrato de Johanna Daza (vertical, fondo neutro,
 add("{{TOC}}", key="toc", cls="toc", section="Contenido")
 
 # ============ 4 INTRO
-add('<div class="pad">'
-    + ph("Pareja conversando frente a frente en una mesa, luz cálida de tarde", "couple talking at table warm light, couple coffee conversation", "height:300px;margin:-76px -92px 30px;flex:none")
+add('<div class="pad just">'
+    + ph("Pareja conversando frente a frente en una mesa, luz cálida de tarde", "couple talking at table warm light, couple coffee conversation", "height:262px;margin:-76px -92px 26px;flex:none")
     + '<span class="script" style="font-size:42px;line-height:1">Bienvenidos</span>'
     '<h2 style="font:800 46px/1.02 var(--sans);margin:2px 0 18px">Iniciemos…</h2>'
-    '<p class="lead" style="margin-bottom:14px">Como asesora clínica de pareja, he mirado que el desafío más frecuente y también el más silencioso en las relaciones es la desconexión emocional.</p>'
+    '<p>Como asesora clínica de pareja, he mirado que el desafío más frecuente y también el más silencioso en las relaciones es la desconexión emocional.</p>'
     '<p>No aparece de golpe: se instala poco a poco, en gestos que dejan de ocurrir, en conversaciones que ya no suceden, en miradas que se vuelven escasas. Cuando no se atiende a tiempo, esta desconexión puede profundizarse hasta convertirse en una ruptura definitiva, aun entre personas que se aman.</p>'
     '<p>Este Ebook nace de mi experiencia acompañando a parejas en procesos terapéuticos y del profundo deseo de ofrecer una guía clara, humana y accesible sobre esta problemática. Aquí encontrarás una explicación sencilla de qué es la desconexión emocional, por qué ocurre, cuáles son sus síntomas, qué consecuencias tiene y qué herramientas básicas existen para comenzar a abordarla.</p>'
     '<p>A lo largo del texto encontrarás mini test, ejemplos prácticos y reflexiones guiadas que te permitirán identificar tu propio estado emocional dentro del vínculo, comprender el de tu pareja y comenzar a reconstruir la conexión afectiva desde un lugar más consciente y compasivo.</p>'
-    '<p style="margin:0">Mi intención es que este documento sea un espacio amoroso, seguro, un punto de partida y una compañía en el camino hacia relaciones más presentes, más honestas y más conectadas.</p>'
+    '<p class="hl">Mi intención es que este documento sea un espacio amoroso, seguro, un punto de partida y una compañía en el camino hacia relaciones más presentes, más honestas y más conectadas.</p>'
     '</div>', key="intro", section="Bienvenida")
 
 # ============ 5 CITA
@@ -254,7 +253,8 @@ add('<div class="pad">'
     '<div class="it no"><div class="ic">✕</div><div>Conectada afectivamente<small>Mirada, contacto, cercanía</small></div></div>'
     '<div class="it no"><div class="ic">✕</div><div>Involucrada en el vínculo<small>A nivel afectivo</small></div></div>'
     '</div>'
-    + band("Entender la desconexión es el primer paso para revertirla: necesitas ver el mapa antes de tomar la ruta")
+    '<div class="estar-lg"><span class="ok">✓</span> Lo que sí está &nbsp;&nbsp;&nbsp; <span class="nx">✕</span> <s>Lo tachado</s> es lo que se pierde en la desconexión</div>'
+    + band("Entender la desconexión es el primer paso para revertirla: necesitas ver el mapa antes de tomar la ruta.")
     + '</div>', key="cap1", section="01 · Qué es")
 
 # ============ CAP 2 (causas)
@@ -344,29 +344,30 @@ add('<div class="pad cp"><div class="parts"><i>Para sostener la conexión</i></d
     + band("La distancia no crece sola: se alimenta. Pero también puede detenerse con una decisión consciente.") + '</div>', section="06 · Herramientas")
 
 # ============ MENSAJE FINAL
-add('<div class="pad mf"><span class="script" style="font-size:42px;line-height:1">Para cerrar</span>'
+add('<div class="pad mf just"><span class="script" style="font-size:42px;line-height:1">Para cerrar</span>'
     '<h2 style="font:800 46px/1.02 var(--sans);margin:2px 0 20px">Mensaje final…</h2>'
-    '<p class="lead" style="font-size:18px">A lo largo de este Ebook recorrimos un camino que nos permitió comprender que la desconexión emocional es un proceso gradual y doloroso, del cual solo podemos salvarnos cuando identificamos sus raíces con honestidad, responsabilidad y valentía.</p>'
+    '<p>A lo largo de este Ebook recorrimos un camino que nos permitió comprender que la desconexión emocional es un proceso gradual y doloroso, del cual solo podemos salvarnos cuando identificamos sus raíces con honestidad, responsabilidad y valentía.</p>'
     '<p>Hacernos cargo de lo que nos corresponde es el primer paso para acercarnos, mirarnos, reconocernos, elegirnos y comenzar a restaurar el vínculo.</p>'
     '<p>La distancia en pareja puede despertar rechazo, ansiedad, tristeza o abandono. Y, como vimos, existen dinámicas que vuelven la relación un espacio inseguro, frío y distante: el maltrato, las promesas incumplidas, la invalidación emocional, las heridas pasadas, el estrés sostenido y la monotonía, son algunas de ellas. Reconocerlas es fundamental para detener el daño y abrir la puerta a la reparación.</p>'
-    + ph("Pareja mirándose a los ojos con ternura, luz suave", "couple looking at each other tenderly, couple love warm light", "height:330px;flex:none;border-radius:6px;margin-top:14px", "")
+    + ph("Pareja mirándose a los ojos con ternura, luz suave", "couple looking at each other tenderly, couple love warm light", "height:440px;flex:none;border-radius:6px;margin-top:18px", "")
     + '</div>', key="final", section="Mensaje final")
-add('<div class="pad mf"><p style="margin-bottom:8px">Mi intención es que este Ebook te haya permitido identificar:</p>'
+add('<div class="pad mf just"><p class="noind" style="margin-bottom:8px">Mi intención es que este Ebook te haya permitido identificar:</p>'
     '<ul class="ck"><li>Qué dinámicas deterioran la relación;</li><li>Qué síntomas de desconexión emocional están presentes;</li><li>Cómo nos afecta la distancia afectiva; y</li><li>Qué herramientas básicas podemos comenzar a aplicar según su caso particular.</li></ul>'
     '<p>Algunas de las prácticas que exploraste aquí: la escucha empática, la comunicación asertiva, las peticiones claras, la validación emocional, la novedad, el tiempo de calidad y la expresión del amor según el lenguaje afectivo del otro, no son soluciones mágicas, son actos conscientes, diarios y constantes que, sostenidos en el tiempo, pueden transformar profundamente la relación.</p>'
     '<p>Hoy los invito a soltar las culpas y ponerse manos a la obra. Cada uno debe asumir su parte y emprender el cambio desde la presencia, la intención y la elección diaria.</p>'
     + '<div class="sp" style="height:6px"></div>' + band("El amor es sentimiento, sí, pero también es acción.").replace('class="band"','class="band xl" style="margin-top:auto"') + '<div class="sp" style="height:30px"></div>'
-    '<div class="thanks"><p>Gracias por llegar hasta aquí y por confiar en mi trabajo. Y gracias, especialmente, a cada pareja que he acompañado en consulta: ustedes inspiran cada palabra de este Ebook.</p>'
+    '<div class="thanks"><p><b>Gracias por llegar hasta aquí y por confiar en mi trabajo.</b> Y gracias, especialmente, a cada pareja que he acompañado en consulta: ustedes inspiran cada palabra de este Ebook.</p>'
     '<img src="assets/logo/johanna-negro.png" alt="Johanna Daza"></div></div>', section="Mensaje final")
 
-# ============ SOBRE / OTRO EBOOK
-add('<div class="pad about"><span class="script" style="font-size:42px;line-height:1">Quién soy</span><h2>Johanna Daza</h2>'
-    '<div class="who">' + ph("Retrato de Johanna", "segundo retrato (más cerrado)", "", "dk sm", client=True) +
-    '<div><p>Soy asesora clínica de pareja. Acompaño a personas y parejas que desean comprender su historia, sanar sus heridas y construir vínculos más presentes, honestos y conectados.</p>'
-    '<p style="margin:0">Mi trabajo nace en la consulta, acompañando a cada pareja en su proceso. Gracias a todas ellas: inspiran cada palabra de este Ebook.</p></div></div>'
-    '<div class="next" style="grid-template-columns:1fr"><div><span class="eyebrow">Hay otro E-Book</span><h3>Muy pronto, un nuevo E-Book</h3>'
-    '<p style="margin:0">Pronto compartiré un segundo E-Book para seguir acompañándote en el camino hacia relaciones más presentes, más honestas y más conectadas.</p></div></div>'
-    '</div>', key="about", section="Sobre la autora")
+# ============ CONTACTO / PRÓXIMO EBOOK
+IG_SVG='<svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r=".9" fill="currentColor" stroke="none"/></svg>'
+add('<div class="pad about"><span class="script" style="font-size:42px;line-height:1">Sigamos conectados</span><h2>Johanna Daza</h2>'
+    '<div class="role" style="margin-bottom:26px">Asesora clínica de pareja</div>'
+    '<div class="igrow">' + IG_SVG + '<span>@johannadazatorres</span></div>'
+    '<div class="next big"><span class="eyebrow">Próximo E-Book</span>'
+    '<div class="n30">30</div><h3>días para reconectar emocionalmente con mi pareja</h3>'
+    '<div class="sub">Guía práctica para volver a mirarnos y elegirnos</div></div>'
+    '</div>', key="about", section="Contacto")
 
 # ============ CONTRAPORTADA
 add('<div class="bg"></div><div class="bt"><h2>La conexión comienza cuando alguien se atreve a hablar…</h2><span class="s">…y alguien decide escuchar.</span></div>'
@@ -381,7 +382,7 @@ toc = [("", "Sobre la autora", "bio"), ("", "Iniciemos…", "intro"),
        ("04", "¿Qué puede ocurrir a raíz de la desconexión?", "cap4"), ("-", "Mini Test final · ¿Cómo vivo la desconexión?", "t3"),
        ("05", "Ejemplos prácticos de desconexión emocional", "cap5"),
        ("06", "Herramientas básicas", "cap6"),
-       ("", "Mensaje final", "final"), ("", "Quién soy y el próximo E-Book", "about")]
+       ("", "Mensaje final", "final"), ("", "Contacto y próximo E-Book", "about")]
 lis = "".join(f'<li class="{"sub" if n=="-" else ""}"><span class="no">{n if n!="-" else ""}</span><span class="tt">{E(t)}</span><span class="pg">{pgnum[k]}</span></li>' for n, t, k in toc)
 toc_html = ('<div class="pad"><span class="script">Lo que vas a encontrar</span><h2>Contenido</h2><ol>' + lis + '</ol><div class="toc-img"></div></div>')
 for p in pages:

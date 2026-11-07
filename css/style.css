@@ -287,3 +287,31 @@ h1,h2,h3{letter-spacing:-.03em}
 .bio .photo{width:380px}.bio .col{left:380px;padding:92px 62px 92px 50px}.bio .foot{left:438px}
 .bio .photo .ph img{object-position:56% 30%}
 .about .who figure.ph img{object-position:center 20%}
+
+/* ---------- Correcciones clienta (v4) ---------- */
+.cover .s1,.cover .s2,.cover .tag{color:var(--amber)}
+.cover h1 s{text-decoration-color:var(--amber)}
+.cover .logo{bottom:112px}
+.cover .tag{bottom:200px}
+.cover .cname{position:absolute;z-index:2;bottom:74px;left:0;right:0;text-align:center;color:#fff;font:800 13px/1 var(--sans);letter-spacing:.34em;text-transform:uppercase}
+.cover .cig{position:absolute;z-index:2;bottom:46px;left:0;right:0;text-align:center;color:var(--amber);font:600 14px/1 var(--sans);letter-spacing:.06em}
+.just p{text-align:justify;text-indent:1.8em;hyphens:auto;-webkit-hyphens:auto;font-size:15.5px;line-height:1.68}
+.just p.noind{text-indent:0;text-align:left}
+.just p.hl{text-indent:0;margin-top:18px;padding:16px 20px;background:var(--amber-l);border-left:5px solid var(--amber);border-radius:0 6px 6px 0;font-weight:700;color:var(--ink)}
+.just p b{font-weight:800}
+.estar .no{background:#EFEAE3}
+.estar .no .ic{background:var(--char);color:var(--amber);font-size:19px}
+.estar .no > div:last-child{text-decoration:line-through;text-decoration-thickness:2.5px;text-decoration-color:var(--ink);color:#6a6a70}
+.estar .no small{text-decoration:inherit}
+.estar-lg{font:500 12.5px/1.4 var(--sans);color:var(--ink-2);margin:12px 0 18px}
+.estar-lg .ok,.estar-lg .nx{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;font:800 11px/1 var(--sans);vertical-align:middle}
+.estar-lg .ok{background:var(--coral);color:var(--char)}
+.estar-lg .nx{background:var(--char);color:var(--amber)}
+.estar-lg s{text-decoration-thickness:2px}
+.about .igrow{display:flex;align-items:center;gap:12px;font:700 22px/1 var(--sans);color:var(--coral-d);margin-bottom:34px}
+.about .igrow svg{flex:none}
+.next.big{flex:1;margin-top:0;display:flex;flex-direction:column;justify-content:center;padding:56px 54px}
+.next.big .n30{font:900 170px/.85 var(--sans);letter-spacing:-.06em;color:var(--amber);margin:14px 0 8px}
+.next.big h3{font:800 42px/1.08 var(--sans);letter-spacing:-.03em;margin-bottom:22px;max-width:520px}
+.next.big .sub{font:italic 400 30px/1.15 var(--script);color:#fff;max-width:470px}
+.next.big{align-items:flex-start}
