@@ -15,3 +15,6 @@
 | img-11.jpg | https://www.pexels.com/photo/9241432/ |
 | img-12.jpg | https://www.pexels.com/photo/3754270/ |
 | img-13.jpg | https://www.pexels.com/photo/21898584/ |
+
+## Iconos de redes (portada)
+Instagram, Facebook y TikTok: Simple Icons (simple-icons, licencia CC0) — https://simpleicons.org
