@@ -271,9 +271,9 @@ add('<div class="pad">'
     '<p style="margin-bottom:16px">La persona está físicamente, pero puede no estar disponible, conectada ni involucrada a nivel afectivo.</p>'
     '<div class="estar">'
     '<div class="it yes"><div class="ic">✓</div><div>Presente físicamente<small>Comparten casa, mesa y agenda</small></div></div>'
-    '<div class="it no"><div class="ic">✕</div><div>Disponible emocionalmente<small>Para escuchar y sostener</small></div></div>'
-    '<div class="it no"><div class="ic">✕</div><div>Conectada afectivamente<small>Mirada, contacto, cercanía</small></div></div>'
-    '<div class="it no"><div class="ic">✕</div><div>Involucrada en el vínculo<small>A nivel afectivo</small></div></div>'
+    '<div class="it no"><div class="ic"></div><div>Disponible emocionalmente<small>Para escuchar y sostener</small></div></div>'
+    '<div class="it no"><div class="ic"></div><div>Conectada afectivamente<small>Mirada, contacto, cercanía</small></div></div>'
+    '<div class="it no"><div class="ic"></div><div>Involucrada en el vínculo<small>A nivel afectivo</small></div></div>'
     '</div>'
     '<div class="estar-lg"><span class="ok">✓</span> Lo que sí está &nbsp;&nbsp;&nbsp; <span class="nx">✕</span> <s>Lo tachado</s> es lo que se pierde en la desconexión</div>'
     + band("Entender la desconexión es el primer paso para revertirla: necesitas ver el mapa antes de tomar la ruta.")
@@ -305,7 +305,7 @@ add('<div class="pad test">' + test_groups(TEST1[9:13], 10)
     + band("Cuando sabes qué está fallando, puedes comenzar a repararlo y abrir la puerta para los pasos siguientes.") + '</div>', section="Mini Test 1")
 
 # ============ CAP 3 síntomas
-add('<div class="pad">'
+add('<div class="pad cop">'
     + opener("03", "Capítulo tres", '<div class="photo-bg" style="position:absolute;inset:0;background-image:url(assets/img/manos-cables.jpg);background-position:center 40%"></div>',
              "¿Cómo saber que estamos desconectados o nos estamos desconectando?", h=340)
     + cards(SINTOMAS[0:3], 1, examples=False) + '</div>', key="cap3", section="03 · Cómo saber")
@@ -319,7 +319,7 @@ add('<div class="pad test compact"><span class="tab">Mini Test 2</span><h2>¿Est
     key="t2", section="Mini Test 2")
 
 # ============ CAP 4 consecuencias
-add('<div class="pad">'
+add('<div class="pad cop">'
     + opener("04", "Capítulo cuatro", '<div class="photo-bg" style="position:absolute;inset:0;background-image:url(assets/img/corazon-alto.jpg);background-position:center 62%"></div>',
              "¿Qué puede ocurrir en uno o ambos miembros de la pareja a raíz de la desconexión emocional?", h=340)
     + cards(CONSEC[0:3], 1, examples=False) + '</div>', key="cap4", section="04 · Qué puede ocurrir")

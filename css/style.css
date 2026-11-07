@@ -334,3 +334,25 @@ h1,h2,h3{letter-spacing:-.03em}
 .cv .philo{padding:20px 26px}.cv .philo b{font-size:19px;margin-bottom:8px}.cv .philo p{font-size:13.5px;line-height:1.5}
 .cv .eyebrow{margin-bottom:9px}
 .cv .philo{padding:18px 26px}.cv .philo p{font-size:13.2px}.cv .degs{gap:6px}
+
+/* ---------- v6: ítems "no" con recuadro rojo ---------- */
+.estar{gap:14px}
+.estar .it{position:relative;padding:14px 46px 14px 16px;min-height:64px}
+.estar .it.no{background:#FDECEC;border:2px solid #D91E1E;border-radius:10px;padding:14px 44px 14px 16px}
+.estar .it.no .ic{position:absolute;top:10px;right:10px;width:22px;height:22px;border-radius:0;background:none;display:block}
+.estar .it.no .ic::before,.estar .it.no .ic::after{content:"";position:absolute;left:50%;top:50%;width:22px;height:3px;background:#D91E1E;border-radius:2px}
+.estar .it.no .ic::before{transform:translate(-50%,-50%) rotate(45deg)}
+.estar .it.no .ic::after{transform:translate(-50%,-50%) rotate(-45deg)}
+.estar .no > div:last-child{text-decoration:line-through;text-decoration-thickness:1px;text-decoration-color:var(--ink);color:var(--ink)}
+.estar-lg .nx{background:none;width:auto;height:auto;color:#D91E1E;font-size:14px}
+.estar-lg s{text-decoration-thickness:1px}
+
+/* ---------- v6: auditoría de diagramación (lectura y ritmo) ---------- */
+.pad.tp .tool p{font-size:15px;line-height:1.62}
+.pad.tp .tool.big p{font-size:16.5px;line-height:1.6}
+.pad.cp .card p{font-size:15px;line-height:1.6}
+.pad.cp .card h3{font-size:18.5px}
+.pad.cop .cards{flex:1;display:flex;flex-direction:column;justify-content:space-around}
+.pad.cop .card{flex:1;align-content:center}
+.pad.cop .card p{font-size:15px;line-height:1.6}
+.pad.cop .card h3{font-size:18.5px}
