@@ -315,3 +315,22 @@ h1,h2,h3{letter-spacing:-.03em}
 .next.big h3{font:800 42px/1.08 var(--sans);letter-spacing:-.03em;margin-bottom:22px;max-width:520px}
 .next.big .sub{font:italic 400 30px/1.15 var(--script);color:#fff;max-width:470px}
 .next.big{align-items:flex-start}
+
+/* ---------- Bio: formación y trayectoria ---------- */
+.cv .degs{display:grid;gap:8px}
+.cv .deg{background:var(--white);border:1px solid rgba(42,42,45,.12);border-left:5px solid var(--amber);border-radius:6px;padding:11px 16px}
+.cv .deg b{display:block;font:800 15.5px/1.25 var(--sans);letter-spacing:-.01em;color:var(--char)}
+.cv .deg span{display:block;font:500 11.5px/1.35 var(--sans);color:var(--ink-2);margin-top:3px}
+.cv .chips{display:flex;flex-wrap:wrap;gap:8px}
+.cv .chips span{font:700 12px/1 var(--sans);padding:9px 14px;border-radius:99px;background:var(--amber-l);color:var(--char);border:1px solid rgba(245,168,58,.55)}
+.cv p{font-size:14.5px;line-height:1.62}
+.cv .philo{margin-top:auto;background:var(--char);color:#fff;border-radius:8px;padding:26px 30px}
+.cv .philo b{display:block;font:800 21px/1.2 var(--sans);letter-spacing:-.02em;color:var(--amber);margin-bottom:10px}
+.cv .philo p{color:#e6e6ea;margin:0;text-indent:0;text-align:left;font-size:14px}
+.bio .stat b{font-size:24px}
+
+.cv .deg{padding:8px 16px}.cv .chips span{padding:7px 13px}
+.cv p{font-size:13.8px;line-height:1.5;margin-bottom:8px}
+.cv .philo{padding:20px 26px}.cv .philo b{font-size:19px;margin-bottom:8px}.cv .philo p{font-size:13.5px;line-height:1.5}
+.cv .eyebrow{margin-bottom:9px}
+.cv .philo{padding:18px 26px}.cv .philo p{font-size:13.2px}.cv .degs{gap:6px}

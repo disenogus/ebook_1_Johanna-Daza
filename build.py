@@ -214,10 +214,32 @@ add('<div class="bg"></div><div class="ct"><span class="s1">Sanando</span>'
 add('<div class="photo">' + ph("Retrato de Johanna Daza (vertical, fondo neutro, mirada cálida)", "retrato profesional de Johanna · reemplazar", "position:absolute;inset:0", "dk", client=True) + '</div>'
     '<div class="col"><span class="script">Conoce a la autora</span><h2>Johanna<br>Daza</h2>'
     '<div class="role">Asesora clínica de pareja</div>'
-    '<p class="lead" style="font-size:17px">Acompaño a personas y parejas que desean comprender su historia, sanar sus heridas y construir vínculos más presentes, honestos y conectados.</p>'
-    '<p style="margin-bottom:26px">Mi trabajo nace en la consulta, acompañando a cada pareja en su proceso.</p>'
+    '<p class="lead" style="font-size:16.5px;margin-bottom:12px">Orientadora de la conducta, orientadora en sexología, asesora clínica de parejas, conferencista y facilitadora de aprendizajes.</p>'
+    '<p style="font-size:14.5px;line-height:1.6">Licenciada en Educación Integral y Magíster en Ciencias con mención en Orientación de la Conducta y en Orientación en Sexología.</p>'
+    '<div class="stats" style="grid-template-columns:1fr;gap:14px;margin:14px 0 18px">'
+    '<div class="stat"><b>≈17</b><span>años en docencia universitaria</span></div>'
+    '<div class="stat"><b>2</b><span>Magíster en Ciencias</span></div>'
+    '<div class="stat"><b>7</b><span>áreas de formación especializada</span></div></div>'
     '<img class="sign" src="assets/logo/johanna-color.png" alt="Johanna Daza"></div>',
     key="bio", cls="bio", section="")
+
+# ============ 2b FORMACIÓN Y TRAYECTORIA
+CHIPS=["Sexualidad Humana","Asesoramiento Clínico de Pareja","Programación Neurolingüística (PNL)","Coaching Ontológico","Coaching en TDAH","Hipnosis Ericksoniana","Intervención Clínica Basada en las Emociones"]
+add('<div class="pad cv just"><span class="script" style="font-size:42px;line-height:1">Su recorrido</span>'
+    '<h2 style="font:800 40px/1.04 var(--sans);margin:2px 0 16px;letter-spacing:-.03em">Formación y trayectoria</h2>'
+    '<span class="eyebrow">Formación académica</span>'
+    '<div class="degs">'
+    '<div class="deg"><b>Licenciada en Educación Integral</b><span>Universidad Nacional Experimental Simón Rodríguez (UNESR)</span></div>'
+    '<div class="deg"><b>Magíster en Ciencias, mención Orientación de la Conducta</b><span>Centro de Investigaciones Psiquiátricas, Psicológicas y Sexológicas de Venezuela (CIPPSV)</span></div>'
+    '<div class="deg"><b>Magíster en Ciencias, mención Orientación en Sexología</b><span>Centro de Investigaciones Psiquiátricas, Psicológicas y Sexológicas de Venezuela (CIPPSV)</span></div></div>'
+    '<span class="eyebrow" style="margin-top:16px">Estudios especializados</span>'
+    '<div class="chips">' + "".join(f'<span>{E(c)}</span>' for c in CHIPS) + '</div>'
+    '<span class="eyebrow" style="margin-top:18px">Trayectoria profesional</span>'
+    '<p>Se desempeñó como docente de aula en distintos niveles del sistema educativo y desde hace aproximadamente 17 años ejerce la docencia universitaria en pregrado y posgrado, impartiendo asignaturas relacionadas con la psicología, la investigación, la conducta, la formación de actitudes del orientador, el protocolo de casos, la terapia de conducta, la orientación educativa y el desarrollo humano. Ha participado como tutora y jurado de numerosos trabajos de grado e investigaciones académicas.</p>'
+    '<p>Es Directora Académica de Consultores Laikos, institución desde la cual participa en la formación de profesionales, la coordinación de programas de desarrollo humano y el acompañamiento de procesos de coaching personal y organizacional.</p>'
+    '<div class="philo"><b>Su trabajo integra el rigor científico con una mirada profundamente humana.</b>'
+    '<p>Cree firmemente que el conocimiento alcanza su verdadero valor cuando se transforma en herramientas prácticas que ayudan a las personas, parejas y familias a comprenderse mejor, construir relaciones más saludables y desarrollar una vida con mayor consciencia, autoestima, valentía, empatía, compasión, bienestar y propósito. Su labor está orientada al fortalecimiento de habilidades y recursos personales que permitan afrontar los desafíos de la vida con mayor equilibrio, resiliencia y asertividad.</p></div>'
+    '</div>', key="bio2", section="Sobre la autora")
 
 # ============ 3 ÍNDICE (se completa luego)
 add("{{TOC}}", key="toc", cls="toc", section="Contenido")
