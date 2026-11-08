@@ -383,3 +383,6 @@ h1,h2,h3{letter-spacing:-.03em}
 .cvstats{margin:2px 0 12px;gap:12px}.cvstats b{font-size:23px}
 .cv .philo p{line-height:1.45}.cv .philo{padding:16px 24px}
 .cover .csoc svg{width:24px;height:24px}.cover .cig{font-size:15px}
+.cvstats{grid-template-columns:1.15fr 1fr .8fr 1fr;gap:12px}
+.cvstats div.hl{background:var(--amber);border-top-color:var(--char);padding:9px 12px 10px;border-radius:0 0 7px 7px}
+.cvstats div.hl b{color:var(--char)}.cvstats div.hl span{color:var(--char);font-weight:700}
